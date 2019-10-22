@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group 'com.example'
+version '0.0.1-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.1.4.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-actuator', version: '2.1.4.RELEASE'
+    // https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-config
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-config', version: '2.1.4.RELEASE'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
